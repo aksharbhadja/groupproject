@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./css/main.css"/>
+    <title>Anime Website</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Unifide entertainment hub</a>
+        <ul class="nav">
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="">Anime</a></li>
+            <li><a href="">books</a></li>
+            <li><a href="">games</a></li>
+            <li><a href="">movies</a></li>
+            <li><a href="">Series</a></li>
+            <li><a href="">chatbox</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="content active">
+            <img src="./images/One-Piece-Logo.png" alt="" class="anime-title">
+            <h4>
+                <span>1997-ongoing</span><span><i>16+</i></span><span>Shonen</span>
+            </h4>
+            <p>Monkey D. Luffy is the main lead character of the One Piece series. He is also known as “Straw Hat Luffy”.He wanted to find the legendary treasure known as “One Piece” left behind by the late Gol D. Roger and become the Pirate King.</p>
+            <div class="button">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="./images/one-piece-poster.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/dnposter-1.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/cgposter-1.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/Coeposter-1.jpg" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/eisposter-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="play"><i class="fa fa-play-circle-o" aria-hidden="true"></i>Watch trailer</a>
+        <ul class="sci">
+            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/script.js"></script> 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var carouselElems = document.querySelectorAll('.carousel');
+            var options = {};
+            var instances = M.Carousel.init(carouselElems, options);
+        });
+    </script>
+    
+</body>
+</html>
